@@ -28,7 +28,7 @@ I'm Johnny, ex Physics teacher, currently a passionate developer, future philant
 
 ## ⚡ Fun fact ...
 
-- I love playing chess and play video games
+- I love playing chess and video games
 - I'm a big fan of Witcher universe
 - I can speak three languages: English, Russian, and Azerbaijani
 
