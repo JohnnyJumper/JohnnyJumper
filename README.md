@@ -35,6 +35,51 @@ I'm Johnny, an ex-Physics teacher, a passionate developer, and a future philanth
 ## 📄 Some of my code snippets ...
 
 ```ts
+interface Initializable {
+  initialize(): Promise<void>;
+}
+
+function Singleton<T extends Initializable>(Base: new () => T) {
+  abstract class SingletonBase {
+    private static instance: T;
+
+    protected constructor() {}
+
+    public static async getInstance(): Promise<T> {
+      if (!this.instance) {
+        const that = new Base();
+        await that.initialize(); // Ensure async initialization
+        this.instance = that as T;
+      }
+      return this.instance as T;
+    }
+  }
+  return SingletonBase;
+}
+
+class AccountService implements Initializable {
+  async initialize(): Promise<void> {
+    return new Promise(async (resolve) => {
+      console.log("Initializing AccountService...");
+      await setTimeout(500);
+      console.log("AccountService initialized.");
+      resolve();
+    });
+  }
+
+  async test() {}
+}
+
+// class BadService {}
+// const BadServiceSingleton = Singleton(BadService); // Error no initialize function within
+
+const accountService1 = await AccountServiceSingleton.getInstance(); // type AccountService
+const accountService2 = await AccountServiceSingleton.getInstance();
+console.log(accountService1 === accountService2); // true
+```
+
+
+```ts
 // Resolution.ts
 
 import { ResolutionError, ResolutionErrorCode } from './errors/resolutionError';
