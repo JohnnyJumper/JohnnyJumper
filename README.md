@@ -49,9 +49,9 @@ function Singleton<T extends Initializable>(Base: new () => T) {
       if (!this.instance) {
         const that = new Base();
         await that.initialize(); // Ensure async initialization
-        this.instance = that as T;
+        this.instance = that;
       }
-      return this.instance as T;
+      return this.instance;
     }
   }
   return SingletonBase;
