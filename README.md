@@ -11,9 +11,7 @@ I'm Johnny, an ex-Physics teacher, a passionate developer, and a future philanth
 ## 🌱 I’m currently learning ...
 
 - LLM and AI Agents workflows
-- Rust
-- Blockchain
-- Web3
+- Neovim and everything related to become a true keyboard warrior
 
 ## 💬 Ask me about ...
 
@@ -183,34 +181,6 @@ export default class Resolution {
       });
     return data;
   }
-```
-
-```ts
-// Custom fetch Provider for UD resolution.ts
-
-import { Provider } from './types';
-
-export class FetchProvider implements Provider {
-  private readonly url: string;
-
-  constructor(url: string) {
-    this.url = url;
-  }
-
-  public async request(request: RequestArguments): Promise<unknown> {
-    const response = await fetch(this.url, {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify(request),
-    });
-
-    if (!response.ok) {
-      throw new Error(`FetchProvider: ${response.status} ${response.statusText}`);
-    }
-
-    return response.json();
-  }
-}
 ```
 
 <!--
