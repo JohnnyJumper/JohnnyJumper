@@ -5,7 +5,6 @@ I'm Johnny, an ex-Physics teacher, a passionate developer, and a future philanth
 
 ## 🔭 I’m currently working on ...
 
-- **rideup**: Startup to conquer the ridesharing app industry by changing the business model
 - **homeosapient**: Personal project to give intelligence to my home
 
 ## 🌱 I’m currently learning ...
