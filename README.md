@@ -22,12 +22,15 @@ I'm Johnny, an ex-Physics teacher, a passionate developer, and a future philanth
 
 - Email: jeyhunt@gmail.com
 - LinkedIn: https://www.linkedin.com/in/johnyvolt
+- Portfolio: https://www.johnvolt.xyz
+- TUI: ssh tui.johnvolt.xyz
 
 ## ⚡ Fun fact ...
 
 - I love playing chess and video games
 - I'm a big fan of the Witcher universe
 - I can speak three languages: English, Russian, and Azerbaijani
+- I hosted a poker tui server at ssh tui.johnvolt.xyz -p 6357 
 
 ## 📄 Some of my code snippets ...
 
