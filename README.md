@@ -1,7 +1,8 @@
 [![trophy](https://github-profile-trophy.vercel.app/?username=JohnnyJumper)](https://github.com/ryo-ma/github-profile-trophy)
 # Hi there 👋
 
-I'm Johnny, an ex-Physics teacher, a passionate developer, and a future philanthropist.
+Senior full stack engineer (9+ years) who turns ambiguous product problems into shipped, measurable systems across
+TypeScript, Next.js, Node.js, PostgreSQL, and AWS. 
 
 ## 🔭 I’m currently working on ...
 
